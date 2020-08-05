@@ -11,6 +11,9 @@
 	<groupId>com.example</groupId>
 	<artifactId>heroku-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
+<!--	<packaging>war</packaging>-->
+
 	<name>heroku-demo</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -42,16 +45,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<mainClass>com.example.herokudemo.HerokuDemoApplication</mainClass>
-				</configuration>
 			</plugin>
 
 			<!-- Heroku Maven Plugin Configuration -->
 			<plugin>
 				<groupId>com.heroku.sdk</groupId>
 				<artifactId>heroku-maven-plugin</artifactId>
-				<version>2.0.3</version>
+				<version>3.0.3</version>
 				<configuration>
 <!--					<appName>callicoder-heroku-maven-demo</appName>-->
 					<appName>test-spring123-app</appName>
