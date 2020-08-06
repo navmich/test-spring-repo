@@ -19,6 +19,7 @@
 
 	<properties>
 		<java.version>11</java.version>
+<!--		<port>8080</port>-->
 	</properties>
 
 	<dependencies>
@@ -57,11 +58,12 @@
 					<appName>test-spring123-app</appName>
 					<includeTarget>false</includeTarget>
 					<includes>
-						<include>${project.build.directory}/${project.build.finalName}.jar</include>
+						<include>${project.build.directory}\${project.build.finalName}.jar</include>
 					</includes>
 					<jdkVersion>${java.version}</jdkVersion>
 					<processTypes>
-						<web>java $JAVA_OPTS -jar ${project.build.directory}/${project.build.finalName}.jar</web>
+<!--						<web>java $JAVA_OPTS -jar ${project.build.directory}\${project.build.finalName}.jar</web>-->
+						<web>java -jar ${project.build.directory}\${project.build.finalName}.jar</web>
 					</processTypes>
 				</configuration>
 			</plugin>
