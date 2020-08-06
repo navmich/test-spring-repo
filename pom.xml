@@ -48,26 +48,26 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-			<!-- Heroku Maven Plugin Configuration -->
-			<plugin>
-				<groupId>com.heroku.sdk</groupId>
-				<artifactId>heroku-maven-plugin</artifactId>
-				<version>3.0.3</version>
-				<configuration>
-<!--					<appName>callicoder-heroku-maven-demo</appName>-->
-					<appName>test-spring123-app</appName>
-					<includeTarget>false</includeTarget>
-					<includes>
-<!--						<include>${project.build.directory}\${project.build.finalName}.jar</include>-->
-						<include>C:/Users/navmi/test-spring-repo/target/heroku-demo-0.0.1-SNAPSHOT.jar</include>
-					</includes>
-					<jdkVersion>${java.version}</jdkVersion>
-					<processTypes>
-<!--						<web>java $JAVA_OPTS -jar ${project.build.directory}\${project.build.finalName}.jar</web>-->
-						<web>java -jar C:/Users/navmi/test-spring-repo/target/heroku-demo-0.0.1-SNAPSHOT.jar</web>
-					</processTypes>
-				</configuration>
-			</plugin>
+<!--			&lt;!&ndash; Heroku Maven Plugin Configuration &ndash;&gt;-->
+<!--			<plugin>-->
+<!--				<groupId>com.heroku.sdk</groupId>-->
+<!--				<artifactId>heroku-maven-plugin</artifactId>-->
+<!--				<version>3.0.3</version>-->
+<!--				<configuration>-->
+<!--&lt;!&ndash;					<appName>callicoder-heroku-maven-demo</appName>&ndash;&gt;-->
+<!--					<appName>test-spring123-app</appName>-->
+<!--					<includeTarget>false</includeTarget>-->
+<!--					<includes>-->
+<!--&lt;!&ndash;						<include>${project.build.directory}\${project.build.finalName}.jar</include>&ndash;&gt;-->
+<!--						<include>C:/Users/navmi/test-spring-repo/target/heroku-demo-0.0.1-SNAPSHOT.jar</include>-->
+<!--					</includes>-->
+<!--					<jdkVersion>${java.version}</jdkVersion>-->
+<!--					<processTypes>-->
+<!--&lt;!&ndash;						<web>java $JAVA_OPTS -jar ${project.build.directory}\${project.build.finalName}.jar</web>&ndash;&gt;-->
+<!--						<web>java -jar C:/Users/navmi/test-spring-repo/target/heroku-demo-0.0.1-SNAPSHOT.jar</web>-->
+<!--					</processTypes>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
 
 
 <!--			<plugin>-->
